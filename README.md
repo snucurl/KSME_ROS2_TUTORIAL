@@ -9,9 +9,23 @@
 - 동적검색(Dynamic Discovery)
 - 보안 강화
 
+
+```
+echo $ROS_DOMAIM_ID
+export ROS_DOMAIN_ID=8
+```
+
+
 ## # 사용 편의성을 위한 툴
 1. Terminator
 ```
 $ sudo apt-get install terminator -y
 $ terminator
+```
+2. gedit
+
+```
+$ sudo apt update
+$ sudo apt install gedit
+$ gedit
 ```
