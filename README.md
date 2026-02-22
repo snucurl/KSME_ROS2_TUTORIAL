@@ -1,11 +1,6 @@
 ## # ROS2 주요 개념
 
-## 노드, 토픽, 서비스, 액션, 파라미터
-
-## 빌드 패키지
-
-
-
+[ROS2 Documentation: Humble](https://docs.ros.org/en/humble/index.html)   
 
 ## DDS
 - ROS2에서는 OMG(Object Management Group)에 의해 표준화된 DDS(Data Distribution Service)의 RTPS(Real Time Publish Subscribe)를 사용하여 실시간 데이터 전송을 보장
@@ -21,10 +16,12 @@
 echo $ROS_DOMAIM_ID
 export ROS_DOMAIN_ID=8
 ```
+
+## 노드, 토픽, 서비스, 액션, 파라미터, 패키지
+
 ## Underlay vs Overlay
 - underlay(apt 설치 ROS): /opt/ros/humble/
 - overlay(사용자 빌드 workspace): ~/robot_ws/
-
 
 ## # Visual Studio Code(IDE) 설치
 1. [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)   
@@ -43,15 +40,10 @@ CMake Tools
 XML
 Python
 autoDocstring - Python Docstrin
-
-
 ```
 cd ~/robot_ws/src
 code .
 ```
-
-
-
 ## # 사용 편의성을 위한 툴
 1. Terminator
 ```
@@ -59,9 +51,14 @@ sudo apt-get install terminator -y
 terminator
 ```
 2. gedit
-
+- 우분투 Desktop에서 사용
 ```
 sudo apt update
 sudo apt install gedit
 gedit
+```
+- 우분투 server에서는 nano 사용 권장
+
+```
+sudo nano .bashrc
 ```
