@@ -5,8 +5,9 @@ source /usr/share/vcstool-completion/vcs.bash
 source /usr/share/colcon_cd/function/colcon_cd.sh
 export _colcon_cd_root=~/robot_ws  
 
-export ROS_DOMAIN_ID=7
-export ROS_NAMESPACE=robot1  
+export ROS_DOMAIN_ID= 4 #실습환경에서는 본인 로봇번호*5 +1, -1을 사용 (0~101)
+export ROS_NAMESPACE=robot1  #실습환경에서는 본인 로봇번호 사용
+export TURTLEBOT3_MODEL=burger
 
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 # export RMW_IMPLEMENTATION=rmw_connext_cpp
