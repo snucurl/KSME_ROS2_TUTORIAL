@@ -1,8 +1,12 @@
 source /opt/ros/humble/setup.bash
-source ~/turtlebot3_ws/install/local_setup.bash  
+
+source ~/turtlebot3_ws/install/setup.bash  
+
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 source /usr/share/vcstool-completion/vcs.bash
 source /usr/share/colcon_cd/function/colcon_cd.sh
+source /usr/share/gazebo/setup.sh
+
 export _colcon_cd_root=~/turtlebot3_ws  
 
 export ROS_DOMAIN_ID= 4 #실습환경에서는 본인 로봇번호*5 +1, -1을 사용 (0~101)
