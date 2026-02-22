@@ -1,9 +1,9 @@
 source /opt/ros/humble/setup.bash
-source ~/robot_ws/install/local_setup.bash  
+source ~/turtlebot3_ws/install/local_setup.bash  
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 source /usr/share/vcstool-completion/vcs.bash
 source /usr/share/colcon_cd/function/colcon_cd.sh
-export _colcon_cd_root=~/robot_ws  
+export _colcon_cd_root=~/turtlebot3_ws  
 
 export ROS_DOMAIN_ID= 4 #실습환경에서는 본인 로봇번호*5 +1, -1을 사용 (0~101)
 export ROS_NAMESPACE=robot1  #실습환경에서는 본인 로봇번호 사용
@@ -20,10 +20,10 @@ export RCUTILS_COLORIZED_OUTPUT=1
 export RCUTILS_LOGGING_USE_STDOUT=0
 export RCUTILS_LOGGING_BUFFERED_STREAM=0  
 
-alias cw='cd ~/robot_ws'
-alias cs='cd ~/robot_ws/src'
+alias cw='cd ~/turtlebot3_ws'
+alias cs='cd ~/turtlebot3_ws/src'
 alias ccd='colcon_cd'
-alias cb='cd ~/robot_ws && colcon build --symlink-install'
+alias cb='cd ~/turtlebot3_ws && colcon build --symlink-install'
 alias cbs='colcon build --symlink-install'
 alias cbp='colcon build --symlink-install --packages-select'
 alias cbu='colcon build --symlink-install --packages-up-to'
