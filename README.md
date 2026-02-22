@@ -1,4 +1,5 @@
-# KSME_ROS2_TUTORIAL
+## # ROS2 주요 개념
+
 ## DDS
 - ROS2에서는 OMG(Object Management Group)에 의해 표준화된 DDS(Data Distribution Service)의 RTPS(Real Time Publish Subscribe)를 사용하여 실시간 데이터 전송을 보장
 - ROS2의 상업적 용도 발판
@@ -14,6 +15,35 @@
 echo $ROS_DOMAIM_ID
 export ROS_DOMAIN_ID=8
 ```
+## Underlay vs Overlay
+- underlay(apt 설치 ROS): /opt/ros/humble/
+- overlay(사용자 빌드 workspace): ~/robot_ws/
+
+
+## # Visual Studio Code(IDE) 설치
+1. [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)   
+2. .deb(Debian, Ubuntu) 선택하여 다운로드
+3.  다운로드한 폴더로 이동($ cd ~/Downloads)
+4. 다운로드 받은 파일을 설치
+```
+$ sudo dpkg -i code code_1.109.5-1771531656_amd64.deb
+```
+5.  작업을 원하는 폴더로 이동 후 실행
+6. VScode 화면에서 Extensions를 선택하여 필요 확장팩을 설치
+C/C++
+ROS
+CMake
+CMake Tools
+XML
+Python
+autoDocstring - Python Docstrin
+
+
+```
+$ cd ~/robot_ws/src
+$ code .
+```
+
 
 
 ## # 사용 편의성을 위한 툴
