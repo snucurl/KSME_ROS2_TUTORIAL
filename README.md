@@ -16,8 +16,11 @@
 echo $ROS_DOMAIM_ID
 export ROS_DOMAIN_ID=8
 ```
-
 ## 노드, 토픽, 서비스, 액션, 파라미터, 패키지
+## 기본 물리량
+- m, rad, second
+- m/s
+- rad/s
 
 ## Underlay vs Overlay
 - underlay(apt 설치 ROS): /opt/ros/humble/
